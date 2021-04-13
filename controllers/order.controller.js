@@ -43,7 +43,7 @@ const getAllOrders = async (req,res) => {
     //const _id = user._id;
     //console.log(_id)
     try {
-        const orders = await Order.find().populate("owner").populate("Products");q  
+        const orders = await Order.find().populate("owner").populate("Products");
         //console.log(orders)
         res.status(200).json(orders);
     } catch (err) {
